@@ -1,60 +1,105 @@
-### 1. My First Web Page  
-Create a webpage titled **"My First Web Page"**.  
-Use `<h1>` for your full name and a `<p>` for a short introduction.
+Create a basic webpage titled “My First Web Page” with name and introduction
 
-### 2. Hyperlink to Google  
-Add a link to **Google** using `<a href="https://google.com" target="_blank">Visit Google</a>`.
+Page title: My First Web Page
 
-### 3. Favorite Cartoon Image  
-Insert an `<img>` of your favorite cartoon with an **alt** text describing it.
+Name displayed as <h1>: Aman Pathak
 
-### 4. Favorite Hobby Paragraph  
-Write a paragraph about your hobby using `<strong>` and `<em>` for emphasis.
+Short paragraph introducing yourself: e.g., student, hobbies, interest in coding.
 
-### 5. Line Break Example  
-Create a paragraph with two sentences separated by `<br>`.
+Add a hyperlink to Google that opens in a new tab
 
-### 6. Blockquote Example  
-Use `<blockquote>` for a quote and `<cite>` for the author’s name.
+Use <a> tag with href="https://www.google.com"
 
-### 7. Heading Levels  
-Show `<h1>` (your name), `<h2>` (your role), `<h3>` (your hobbies).
+Use target="_blank" to open in a new tab.
 
-### 8. Highlight and Note  
-Add a `<mark>` to highlight a word and `<small>` for a note like “Updated recently”.
+Link text example: “Visit Google”.
 
-### 9. Bold and Italic Together  
-Use both `<strong>` and `<em>` in the same sentence.
+Insert an image of favorite cartoon or animated character
 
-### 10. Inline Code Example  
-Show a code snippet using `<code>console.log("Hello World");</code>`.
+Use <img> tag with src pointing to the image URL.
 
-### 11. Using Span Elements  
-Include three `<span>` elements inside a paragraph to label different parts.
+Include alt text describing the image, e.g., "Tom from Tom and Jerry".
 
-### 12. Combine Inline Elements  
-Make a creative paragraph using `<strong>`, `<em>`, `<mark>`, `<small>`, `<br>`.
+Paragraph describing your favorite hobby with formatting
 
-### 13. Header Section  
-Use `<header>` with an `<h1>` title (website name).
+Use <strong> to emphasize one word.
 
-### 14. Navigation Menu  
-Add a `<nav>` with three placeholder links — Home, About, Contact.
+Use <em> to italicize another.
 
-### 15. Main Section Intro  
-Inside `<main>`, add a paragraph introducing yourself.
+Example: “I love reading books because it keeps my mind <strong>active</strong> and <em>relaxed</em>.”
 
-### 16. About Me Section  
-Inside `<main>`, create a `<section>` titled “About Me” with one paragraph.
+Paragraph with two sentences separated by a line break
 
-### 17. Blog Article  
-Inside `<main>`, add an `<article>` titled “My First Blog” with a short paragraph.
+Use <br> to separate the two sentences.
 
-### 18. Aside Section  
-Create an `<aside>` titled “Useful Links” with 1–2 hyperlinks.
+Example: “This is the first sentence.<br>This is the second sentence.”
 
-### 19. Footer Section  
-Add a `<footer>` with copyright info — `© 2025 [Your Name]`.
+Use <blockquote> to display a meaningful quote with <cite>
 
-### 20. Complete Webpage  
-Combine **header, nav, main, section, article, aside, footer** into one full webpage.
+Example: "The only way to do great work is to love what you do." <cite>– Steve Jobs</cite>
+
+Demonstrate different heading levels
+
+<h1> – Your name
+
+<h2> – Your role (e.g., Student)
+
+<h3> – Your hobbies or interests
+
+Paragraph containing highlighted word and small note
+
+Use <mark> to highlight a word
+
+Use <small> for a note, e.g., “Updated recently”
+
+Paragraph using both <strong> and <em>
+
+Example: “It is <strong>important</strong> to stay <em>consistent</em> in learning.”
+
+Inline code inside paragraph using <code>
+
+Example: Show how to print “Hello World” in JavaScript: <code>console.log("Hello World");</code>
+
+Paragraph with three <span> elements
+
+Use spans to label or highlight different parts of text, e.g., hobbies, skills, emojis.
+
+Creative paragraph combining multiple inline elements
+
+Combine <strong>, <em>, <mark>, <small>, <br> in a single paragraph for formatting.
+
+Header section displaying website title
+
+Use <header> tag with <h1> inside, e.g., “My First Web Page”
+
+Navigation section with three links
+
+Use <nav> tag containing links: Home, About, Contact.
+
+Use # as placeholders for href.
+
+Main section introducing who you are
+
+Use <main> and include a short paragraph summarizing yourself and the page’s purpose.
+
+Section titled “About Me” with paragraph
+
+Use <section> with heading <h2>About Me</h2> and a descriptive paragraph.
+
+Article with heading “My First Blog” and paragraph
+
+Use <article> with <h3>My First Blog</h3> and short blog-style paragraph.
+
+Aside element titled “Useful Links” with hyperlinks
+
+Use <aside> and include 1–2 links to favorite websites or portfolio.
+
+Footer with copyright information
+
+Use <footer> and include © 2025 Aman Pathak.
+
+Combine all the above structure
+
+Use semantic HTML: <header>, <nav>, <main>, <section>, <article>, <aside>, <footer>
+
+Integrate headings, paragraphs, links, image, formatting tags in a complete webpage.
