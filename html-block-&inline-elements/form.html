@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Registration</title>
+</head>
+<body>
+
+    <h1>Course Registration Form</h1>
+
+    <form>
+        <fieldset>
+            <legend>Student Information</legend>
+            
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="student_name">
+            <br><br>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="student_email">
+            <br><br>
+            
+            <label for="course">Select a Course:</label>
+            <select id="course" name="course_selection">
+                <option value="wd">Web Development</option>
+                <option value="ds">Data Science</option>
+                <option value="dm">Digital Marketing</option>
+                <option value="gd">Graphic Design</option>
+            </select>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Register">
+    </form>
+
+    <h2>Available Course Schedules</h2>
+    <table border="1" style="width:50%;">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Instructor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday & Wednesday</td>
+                <td>6:00 PM - 8:00 PM</td>
+                <td>Dr. Alice Johnson</td>
+            </tr>
+            <tr>
+                <td>Tuesday & Thursday</td>
+                <td>7:00 PM - 9:00 PM</td>
+                <td>Mr. Bob Williams</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>10:00 AM - 2:00 PM</td>
+                <td>Ms. Carol White</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
