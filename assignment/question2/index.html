@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height and Width Practice Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Height and Width Practice Layout</h1>
+    </header>
+    
+    <main>
+        <section class="box-container">
+            <!-- Box with pixel units -->
+            <div class="box box-px">
+                <h3>Pixel Units</h3>
+                <p>Width: 300px</p>
+                <p>Height: 200px</p>
+            </div>
+            
+            <!-- Box with percentage and vh units -->
+            <div class="box box-percent-vh">
+                <h3>Percentage & VH</h3>
+                <p>Width: 40%</p>
+                <p>Min-height: 30vh</p>
+                <p>Scroll to see overflow</p>
+                <div class="overflow-content">
+                    Extra content that demonstrates overflow property. This content might overflow the container depending on the settings applied.
+                </div>
+            </div>
+            
+            <!-- Box with em units and constraints -->
+            <div class="box box-em">
+                <h3>Em Units</h3>
+                <p>Width: 20em</p>
+                <p>Max-width: 350px</p>
+                <p>Height: 15em</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 CSS Demonstration</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,121 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #e0e7ff 0%, #f0e7ff 100%);
+    min-height: 100vh;
+}
+
+/* Header styling with text-shadow */
+header {
+    background-color: #5b21b6;
+    color: white;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+}
+
+/* Main content area */
+main {
+    padding: 4rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Flexbox container for cards in a single row */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+/* Base card styling */
+.card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 320px;
+    transition: all 0.4s ease; /* Smooth transition for hover effects */
+    cursor: pointer;
+}
+
+.card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #2d3748;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Text shadow for headings */
+}
+
+.card p {
+    color: #4a5568;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+/* Card with subtle shadow */
+.card-subtle {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.card-subtle:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Lift effect on hover */
+    transform: translateY(-8px); /* Move card up */
+}
+
+/* Card with medium shadow */
+.card-medium {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Medium shadow */
+}
+
+.card-medium:hover {
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
+    transform: translateY(-10px);
+}
+
+/* Card with strong shadow */
+.card-strong {
+    box-shadow: 
+        0 10px 20px rgba(0, 0, 0, 0.2),
+        0 6px 6px rgba(0, 0, 0, 0.15); /* Multiple layered shadows */
+}
+
+.card-strong:hover {
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.3),
+        0 15px 15px rgba(0, 0, 0, 0.2); /* Dramatic lift effect */
+    transform: translateY(-12px);
+}
+
+/* Footer styling */
+footer {
+    background-color: #5b21b6;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1024px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 500px;
+    }
+}

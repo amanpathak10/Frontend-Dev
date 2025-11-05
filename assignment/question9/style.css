@@ -1,0 +1,198 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+header h1 {
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Main content area */
+main {
+    padding: 3rem 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Form container */
+.form-container {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #5b21b6;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+/* Form group styling with uniform spacing */
+.form-group {
+    margin-bottom: 1.8rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #4b5563;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Base input and textarea styling */
+input,
+textarea {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1rem;
+    font-family: inherit;
+    border-radius: 6px;
+    border: 2px solid #d1d5db;
+    background-color: #f9fafb;
+    transition: all 0.3s ease;
+}
+
+/* Solid outline style */
+.input-solid {
+    outline-style: solid;
+    outline-width: 0;
+}
+
+.input-solid:focus {
+    outline-width: 3px;
+    outline-color: #3b82f6; /* Blue outline on focus */
+    outline-offset: 2px;
+    border-color: #3b82f6;
+    background-color: white;
+}
+
+/* Dashed outline style */
+.input-dashed {
+    outline-style: dashed;
+    outline-width: 0;
+}
+
+.input-dashed:focus {
+    outline-width: 3px;
+    outline-color: #10b981; /* Green outline on focus */
+    outline-offset: 3px;
+    border-color: #10b981;
+    background-color: white;
+}
+
+/* Dotted outline style */
+.input-dotted {
+    outline-style: dotted;
+    outline-width: 0;
+}
+
+.input-dotted:focus {
+    outline-width: 3px;
+    outline-color: #f59e0b; /* Orange outline on focus */
+    outline-offset: 2px;
+    border-color: #f59e0b;
+    background-color: white;
+}
+
+/* Double outline style */
+.input-double {
+    outline-style: double;
+    outline-width: 0;
+}
+
+.input-double:focus {
+    outline-width: 5px;
+    outline-color: #8b5cf6; /* Purple outline on focus */
+    outline-offset: 2px;
+    border-color: #8b5cf6;
+    background-color: white;
+}
+
+/* Groove outline style for textarea */
+.textarea-groove {
+    outline-style: solid;
+    outline-width: 0;
+    resize: vertical;
+}
+
+.textarea-groove:focus {
+    outline-width: 4px;
+    outline-color: #ec4899; /* Pink outline on focus */
+    outline-offset: 4px;
+    border-color: #ec4899;
+    background-color: white;
+}
+
+/* Submit button styling */
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline-style: solid;
+    outline-width: 0;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.submit-btn:focus {
+    outline-width: 3px;
+    outline-color: #fbbf24;
+    outline-offset: 3px;
+}
+
+/* Footer styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .form-container {
+        padding: 1.5rem;
+    }
+}

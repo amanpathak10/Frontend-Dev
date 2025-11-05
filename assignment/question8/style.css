@@ -1,0 +1,211 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #e5e7eb;
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    color: white;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Main content area - centered using Flexbox */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Section container */
+.demo-container {
+    width: 100%;
+    margin-bottom: 3rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.demo-container h2 {
+    text-align: center;
+    color: #4f46e5;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+/* Box model demonstration wrapper */
+.box-model-demo {
+    width: 300px;
+    margin: 0 auto 1.5rem;
+}
+
+/* Default box model (content-box) */
+.default-box {
+    box-sizing: content-box; /* Default box model */
+    background-color: #fef3c7; /* Padding area color */
+    border: 15px solid #f59e0b; /* Border */
+    padding: 20px; /* Padding */
+    margin: 30px auto; /* Margin */
+    outline: 3px dashed #dc2626; /* Visual indicator for margin */
+    outline-offset: 27px;
+}
+
+/* Border-box model */
+.border-box {
+    box-sizing: border-box; /* Border-box model */
+    background-color: #dbeafe; /* Padding area color */
+    border: 15px solid #3b82f6; /* Border */
+    padding: 20px; /* Padding */
+    margin: 30px auto; /* Margin */
+    outline: 3px dashed #dc2626; /* Visual indicator for margin */
+    outline-offset: 27px;
+}
+
+/* Content area styling */
+.content {
+    background-color: white;
+    padding: 1rem;
+    border: 2px solid #6b7280;
+    text-align: center;
+}
+
+.content strong {
+    display: block;
+    font-size: 1.2rem;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.content p {
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+/* Description text */
+.description {
+    text-align: center;
+    color: #4b5563;
+    font-size: 1rem;
+    line-height: 1.8;
+    padding: 0 1rem;
+}
+
+/* Layers visualization */
+.layers-demo {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+}
+
+.layer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Layer label styling */
+.layer-label {
+    position: absolute;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Margin layer (outermost) */
+.margin-layer {
+    background-color: transparent;
+    border: 3px dashed #dc2626;
+    padding: 30px; /* Represents margin */
+}
+
+.margin-layer > .layer-label {
+    top: 5px;
+    left: 5px;
+    color: #dc2626;
+}
+
+/* Border layer */
+.border-layer {
+    background-color: #f59e0b; /* Border color */
+    padding: 15px; /* Border width */
+}
+
+.border-layer > .layer-label {
+    top: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Padding layer */
+.padding-layer {
+    background-color: #8b5cf6; /* Padding color */
+    padding: 25px; /* Padding width */
+}
+
+.padding-layer > .layer-label {
+    top: 5px;
+    left: 5px;
+}
+
+/* Content layer (innermost) */
+.content-layer {
+    background-color: #3b82f6; /* Content color */
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-layer > .layer-label {
+    position: static;
+    font-size: 1rem;
+}
+
+/* Footer styling */
+footer {
+    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .box-model-demo {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .layers-demo {
+        transform: scale(0.85);
+    }
+}

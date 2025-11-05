@@ -1,0 +1,113 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ecf0f1;
+    font-size: 16px; /* Base font size for em calculations */
+}
+
+/* Header styling */
+header {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Main content area */
+main {
+    padding: 2rem;
+    min-height: 70vh;
+}
+
+/* Flexbox container for centering vertically and horizontally */
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    min-height: 60vh;
+    flex-wrap: wrap;
+}
+
+/* Base box styling */
+.box {
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.box h3 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.box p {
+    margin-bottom: 0.5rem;
+}
+
+/* Box with pixel units */
+.box-px {
+    width: 300px; /* Fixed width in pixels */
+    height: 200px; /* Fixed height in pixels */
+    background-color: #3498db;
+    color: white;
+}
+
+/* Box with percentage and viewport height units */
+.box-percent-vh {
+    width: 40%; /* Percentage width - relative to parent */
+    min-height: 30vh; /* Minimum height using viewport height */
+    background-color: #2ecc71;
+    color: white;
+    overflow: auto; /* Demonstrates overflow property */
+    max-height: 35vh; /* Maximum height constraint */
+}
+
+.overflow-content {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+/* Box with em units and max-width */
+.box-em {
+    width: 20em; /* Em units - relative to font size */
+    max-width: 350px; /* Maximum width constraint */
+    height: 15em; /* Height in em units */
+    background-color: #9b59b6;
+    color: white;
+}
+
+/* Footer styling */
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .box-container {
+        flex-direction: column;
+    }
+    
+    .box-percent-vh {
+        width: 80%;
+    }
+}
