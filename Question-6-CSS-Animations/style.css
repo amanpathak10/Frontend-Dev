@@ -1,0 +1,222 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #666;
+}
+
+/* Main Content */
+main {
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+/* Animation Container - Centered with Flexbox */
+.animation-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1200px;
+}
+
+/* Animation Item */
+.animation-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    min-width: 250px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    margin-top: 1rem;
+    color: #555;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Base Shapes */
+.box {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.ball {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+/* Sliding Box Animation */
+.sliding-box {
+    background-color: #3498db;
+    animation: slide 3s ease-in-out infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-50px);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(-50px);
+    }
+}
+
+/* Bouncing Ball Animation */
+.bouncing-ball {
+    background-color: #e74c3c;
+    animation: bounce 1.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: translateY(-80px);
+        animation-timing-function: ease-out;
+    }
+}
+
+/* Color Changing Text Animation */
+.color-text {
+    font-size: 2rem;
+    font-weight: bold;
+    animation: colorChange 4s linear infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #e74c3c;
+    }
+    25% {
+        color: #f39c12;
+    }
+    50% {
+        color: #2ecc71;
+    }
+    75% {
+        color: #3498db;
+    }
+    100% {
+        color: #e74c3c;
+    }
+}
+
+/* Rotating Square Animation */
+.rotating-box {
+    background-color: #f39c12;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Pulsing Circle Animation */
+.pulsing-circle {
+    background-color: #2ecc71;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.6;
+    }
+}
+
+/* Fading Box Animation */
+.fading-box {
+    background-color: #9b59b6;
+    animation: fade 2.5s ease-in-out infinite;
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.2;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 1.5rem;
+    text-align: center;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .animation-container {
+        gap: 2rem;
+    }
+    
+    .animation-item {
+        min-width: 200px;
+        padding: 1.5rem;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+}

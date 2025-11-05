@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Selectors Demonstration</h1>
+        <p>Examples of different selector types</p>
+    </header>
+    
+    <main>
+        <!-- Element Selector Example -->
+        <section class="selector-section">
+            <h2>Element Selector</h2>
+            <p>This paragraph uses element selector styling (all p tags).</p>
+            <p>Another paragraph with the same styling.</p>
+        </section>
+
+        <!-- Class Selector Example -->
+        <section class="selector-section">
+            <h2>Class Selector</h2>
+            <p class="highlight">This paragraph has a class "highlight".</p>
+            <p class="highlight">Another paragraph with the same class.</p>
+            <p>This paragraph has no class.</p>
+        </section>
+
+        <!-- ID Selector Example -->
+        <section class="selector-section">
+            <h2>ID Selector</h2>
+            <p id="unique">This paragraph has a unique ID "unique".</p>
+            <p>Regular paragraph without ID.</p>
+        </section>
+
+        <!-- Attribute Selector Example -->
+        <section class="selector-section">
+            <h2>Attribute Selector</h2>
+            <a href="https://example.com" target="_blank">External Link</a>
+            <a href="#internal">Internal Link</a>
+            <input type="text" placeholder="Text input">
+            <input type="email" placeholder="Email input">
+        </section>
+
+        <!-- Descendant Combinator Example -->
+        <section class="selector-section">
+            <h2>Descendant Combinator (space)</h2>
+            <div class="parent">
+                <p>Paragraph inside parent div.</p>
+                <div>
+                    <p>Nested paragraph inside parent div.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Child Combinator Example -->
+        <section class="selector-section">
+            <h2>Child Combinator (&gt;)</h2>
+            <ul class="list">
+                <li>Direct child item 1</li>
+                <li>Direct child item 2
+                    <ul>
+                        <li>Nested item (not direct child)</li>
+                    </ul>
+                </li>
+                <li>Direct child item 3</li>
+            </ul>
+        </section>
+
+        <!-- Adjacent Sibling Combinator Example -->
+        <section class="selector-section">
+            <h2>Adjacent Sibling Combinator (+)</h2>
+            <h3>First Heading</h3>
+            <p>This paragraph immediately follows h3.</p>
+            <p>This paragraph does not immediately follow h3.</p>
+        </section>
+
+        <!-- General Sibling Combinator Example -->
+        <section class="selector-section">
+            <h2>General Sibling Combinator (~)</h2>
+            <div class="sibling-demo">
+                <h4>Heading</h4>
+                <p>First sibling paragraph after h4.</p>
+                <div>A div between paragraphs</div>
+                <p>Second sibling paragraph after h4.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>CSS Selectors Practice | Understanding Selector Types</p>
+    </footer>
+</body>
+</html>

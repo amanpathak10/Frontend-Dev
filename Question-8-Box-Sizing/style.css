@@ -1,0 +1,215 @@
+/* Global Styles - Using border-box for everything except demo boxes */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Main Content */
+main {
+    padding: 3rem 2rem;
+}
+
+/* Comparison Container */
+.comparison-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+    flex-wrap: wrap;
+}
+
+/* Box Demo Section */
+.box-demo {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    flex: 1;
+    min-width: 350px;
+}
+
+.box-demo h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Demo Boxes */
+.box {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid;
+    margin: 0 auto 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.box p {
+    margin: 0.3rem 0;
+}
+
+/* Default Box-Sizing (content-box) */
+.default-box {
+    box-sizing: content-box;
+    background-color: #3498db;
+    border-color: #2980b9;
+    color: white;
+}
+
+/* Border-Box Sizing */
+.border-box {
+    box-sizing: border-box;
+    background-color: #2ecc71;
+    border-color: #27ae60;
+    color: white;
+}
+
+/* Explanation Section */
+.explanation {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #e74c3c;
+}
+
+.explanation h3 {
+    color: #2c3e50;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.explanation p {
+    color: #555;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.explanation strong {
+    color: #e74c3c;
+    font-size: 1.1rem;
+}
+
+.note {
+    background-color: #fff3cd;
+    padding: 0.8rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    border-left: 3px solid #f39c12;
+    font-style: italic;
+}
+
+/* Visual Comparison Section */
+.visual-comparison {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.visual-comparison h2 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+/* Comparison Boxes Container */
+.comparison-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.comparison-item {
+    text-align: center;
+}
+
+.comparison-item p {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+.small {
+    width: 300px;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 1.5rem;
+    text-align: center;
+    color: #333;
+    margin-top: 3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .comparison-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .box-demo {
+        min-width: auto;
+        width: 100%;
+    }
+    
+    .box,
+    .small {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    main {
+        padding: 2rem 1rem;
+    }
+}

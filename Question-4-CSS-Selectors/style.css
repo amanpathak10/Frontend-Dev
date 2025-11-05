@@ -1,0 +1,174 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Section Styling */
+.selector-section {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.selector-section h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+/* Element Selector - Targets all p elements */
+p {
+    color: #555;
+    padding: 0.5rem 0;
+}
+
+/* Class Selector - Targets elements with class "highlight" */
+.highlight {
+    background-color: #f1c40f;
+    padding: 0.8rem;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* ID Selector - Targets element with id "unique" */
+#unique {
+    background-color: #e74c3c;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Attribute Selector - Targets links with target="_blank" */
+a[target="_blank"] {
+    background-color: #3498db;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+/* Attribute Selector - Targets links with href starting with # */
+a[href^="#"] {
+    background-color: #2ecc71;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+/* Attribute Selector - Targets email input type */
+input[type="email"] {
+    border: 2px solid #9b59b6;
+    padding: 0.8rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+    background-color: #f3e5f5;
+}
+
+/* Attribute Selector - Targets text input type */
+input[type="text"] {
+    border: 2px solid #1abc9c;
+    padding: 0.8rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+    background-color: #e0f2f1;
+}
+
+/* Descendant Combinator - Targets all p inside .parent */
+.parent p {
+    background-color: #ecf0f1;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border-left: 4px solid #3498db;
+}
+
+/* Child Combinator - Targets only direct li children of .list */
+.list > li {
+    background-color: #3498db;
+    color: white;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    list-style-position: inside;
+}
+
+/* Nested li elements (not direct children) will have default styling */
+.list li li {
+    background-color: #95a5a6;
+    margin-top: 0.5rem;
+}
+
+/* Adjacent Sibling Combinator - Targets p immediately after h3 */
+h3 + p {
+    background-color: #e8f5e9;
+    border-left: 4px solid #2ecc71;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+/* General Sibling Combinator - Targets all p siblings after h4 */
+.sibling-demo h4 ~ p {
+    background-color: #fff3e0;
+    border-left: 4px solid #f39c12;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .selector-section {
+        padding: 1.5rem;
+    }
+}

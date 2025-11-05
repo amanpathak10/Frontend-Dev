@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Sizing Comparison</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Box-Sizing Comparison</h1>
+        <p>Understanding content-box vs border-box</p>
+    </header>
+    
+    <main>
+        <section class="comparison-container">
+            <!-- Default Box-Sizing (content-box) -->
+            <div class="box-demo">
+                <h2>Default: content-box</h2>
+                <div class="box default-box">
+                    <p>Width: 300px</p>
+                    <p>Padding: 20px</p>
+                    <p>Border: 5px</p>
+                </div>
+                <div class="explanation">
+                    <h3>How it works:</h3>
+                    <p>Total width = width + padding + border</p>
+                    <p>Total width = 300px + 40px + 10px = <strong>350px</strong></p>
+                    <p class="note">The padding and border are added OUTSIDE the specified width.</p>
+                </div>
+            </div>
+
+            <!-- Border-Box Sizing -->
+            <div class="box-demo">
+                <h2>Modern: border-box</h2>
+                <div class="box border-box">
+                    <p>Width: 300px</p>
+                    <p>Padding: 20px</p>
+                    <p>Border: 5px</p>
+                </div>
+                <div class="explanation">
+                    <h3>How it works:</h3>
+                    <p>Total width = width (includes padding and border)</p>
+                    <p>Total width = <strong>300px</strong></p>
+                    <p class="note">The padding and border are included INSIDE the specified width.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Comparison -->
+        <section class="visual-comparison">
+            <h2>Side-by-Side Comparison</h2>
+            <p class="subtitle">Both boxes have width: 300px, padding: 20px, border: 5px</p>
+            <div class="comparison-boxes">
+                <div class="comparison-item">
+                    <div class="box default-box small">content-box</div>
+                    <p>Actual width: 350px</p>
+                </div>
+                <div class="comparison-item">
+                    <div class="box border-box small">border-box</div>
+                    <p>Actual width: 300px</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Box-Sizing Practice | CSS Layout Fundamentals</p>
+    </footer>
+</body>
+</html>
